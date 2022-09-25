@@ -312,7 +312,7 @@ def generate_website(savefile, cvfile):
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack-subset.css" integrity="sha512-/qDvulLjBL2EaRMJOIXQhkiKwhlkDdT2qY000siiuS02OOxbL8BrBOW1aJBjPkC/QJzc8VbnIe4zzGsISNnTHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-<link rel="stylesheet" href="style/academicons/css/academicons.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <link rel="stylesheet" href="style/sheet.css">
 </head>
 <body>
@@ -323,6 +323,3 @@ def generate_website(savefile, cvfile):
     out += "</div>\n</body>\n</html>"
     with open(savefile, "w") as f:
         f.write(out)
-
-if __name__=="__main__":
-    generate_website("index.html", "data/cv.yaml")
