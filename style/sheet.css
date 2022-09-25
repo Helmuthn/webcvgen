@@ -1,0 +1,281 @@
+:root {
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
+
+  --background-color: var(--nord0);
+  --text-color: var(--nord4);
+  --link-color: var(--nord5);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Hack, monospace;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 25em auto;
+    grid-template-rows: 3em auto;
+}
+
+.sidebar {
+    text-align: center;
+    margin-top: 4em;
+    position: sticky;
+    font-size: 90%;
+}
+
+.sidebar img {
+    width: 50%;
+    border-radius: 15%;
+    border: 3px solid var(--nord3);
+}
+
+.sidebar hr {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.sidetitle {
+    font-size: 125%;
+}
+
+.interest {
+    margin-bottom: -0.7em;
+}
+
+.sidebar a {
+    transition: color 0.2s;
+}
+.sidebar a:hover {
+    color: var(--nord10);
+}
+
+.ai-google-scholar-square {
+    margin-top: -0.8em;
+    overflow:hidden;
+}
+
+.navigation {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border-left: 1px solid var(--nord3);
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color);
+    z-index: 5;
+    border-bottom: 1px solid var(--nord3);
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.navbar li {
+    float: left;
+    margin-left: 1.5em;
+    font-size: 110%;
+    padding-top: 0.5em;
+}
+
+ul.navbar li a {
+    text-decoration: none;
+    color: var(--nord6);
+    transition: 0.1s ease-in-out;
+}
+
+ul.navbar li a:hover {
+    color: var(--nord10);
+}
+
+.main-content {
+    padding-left: 3em;
+    padding-right: 2em;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-left: 1px solid var(--nord3);
+}
+
+.main-content li {
+    margin-bottom: 0.3em;
+}
+
+.research {
+    width:35em;
+}
+
+hr {
+    color: var(--nord3);
+    margin-left: -2em;
+}
+
+a {
+    color: var(--link-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.ack {
+    font-size: 70%;
+}
+
+.pub-details{
+    padding: 1em;
+    margin-left: 4em;
+    margin-right: 2em;
+    margin-top: 1em;
+    display: inline-block;
+    position: relative;
+    background-color: var(--nord1);
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.25);
+}
+
+details[open] summary ~ * {
+  animation: sweep .3s;
+}
+@keyframes sweep {
+  0%    {opacity: 0}
+  100%  {opacity: 1}
+}
+
+
+.publication summary{
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: 0em;
+    display: inline-block;
+    position: relative;
+    background-color: var(--nord1);
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+.publication summary::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.6);
+    transition: opacity 0.1s ease-in-out;
+}
+
+.publication summary:hover::after {
+    opacity: 1;
+}
+
+h2 {
+    color: var(--nord6);
+    margin-left: -1em;
+    padding-top: 65px;
+    margin-top: -50px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    color: var(--nord6);
+    padding-top: 1em;
+}
+
+h4 {
+    font-size: 175%;
+}
+
+.sidebar h4 {
+    margin-bottom: .5em;
+}
+
+/* CSS Responsive Aspects */
+@media only screen and (max-width: 70em){
+    /* For phones and narrow views */
+
+    .container {
+        display: contents;
+        font-size: 140%;
+    }
+
+    .navigation {
+        width: 100%;
+        position: relative;
+        visibility: hidden;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        font-size: 0.8rem;
+        position:relative;
+        margin-bottom: 2em;
+        margin-top: 0em;
+    }
+
+    .sidetitle {
+        font-size: 140%;
+    }
+    
+    .main-content {
+        margin-left: 5%;
+        margin-right: 5%;
+        border-left: none;
+        width: 75%;
+        font-size: 0.8rem;
+        position:relative;
+    }
+
+    .sidebar img {
+        width: 40%;
+        border-radius: 15%;
+        border: 3px solid var(--nord3);
+    }
+
+    .research {
+        width:90%;
+    }
+
+    .ai-google-scholar-square {
+        font-size: 2.2rem;
+        overflow:visible;
+        margin-top: -0.8em;
+        padding: 1rem;
+    }
+
+    .bx-md {
+        padding: 1rem;
+    }
+
+    ul {
+        list-style-type: square;
+    }
+}

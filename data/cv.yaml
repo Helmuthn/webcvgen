@@ -1,0 +1,166 @@
+---
+about:
+  name: "Helmuth Naumer"
+  bibtex: "data/publications.bib"
+  email: "hnaumer2@illinois.edu"
+  profile: "images/profile_small.jpg"
+  summary: "data/research.md"
+  job:
+    position: "PhD Candidate"
+    company: "Electrical and Computer Engineering,\\Coordinated Science Laboratory,\\ University of Illinois Urbana–Champaign"
+  interests:
+    title: "Research Interests"
+    interestlist:
+      - "Statistical Signal Processing"
+      - "Dynamical Systems"
+      - "Inference Model Invariants"
+  education:
+    - description: "BS in Electrical Engineering"
+      year: "2019"
+      school: "Massachusetts Institute of Technology"
+  linkedin: "https://www.linkedin.com/in/helmuth-naumer/"
+  github: "https://github.com/Helmuthn"
+  scholar: "https://scholar.google.com/citations?user=3yPUPN8AAAAJ&hl=en"
+
+coursework:
+  uiuc:
+    name: "University of Illinois Urbana-Champaign"
+    terms:
+      - time: "Fall 2022"
+        cs598tlr:
+          number: "CS 598TLR"
+          title: "Proof Automation"
+      - time: "Fall 2021"
+        ece580:
+          number: "ECE 580"
+          title: "Optimization by Vector Space Methods"
+      - time: "Spring 2021"
+        ece557:
+          number: "ECE 557"
+          title: "Geometric Control Theory"
+      - time: "Fall 2020"
+        ece555:
+          number: "ECE 555"
+          title: "Control of Stochastic Systems"
+      - time: "Spring 2020"
+        ece528:
+          number: "ECE 528"
+          title: "Analysis of Nonlinear Systems"
+        ece543:
+          number: "ECE 543"
+          title: "Statistical Learning Theory"
+        ece556:
+          number: "ECE 556"
+          title: "Coding Theory"
+      - time: "Fall 2019"
+        ece544:
+          number: "ECE 544"
+          title: "Pattern Recognition"
+        ece563:
+          number: "ECE 563"
+          title: "Information Theory"
+        ece566:
+          number: "ECE 566"
+          title: "Computational Inference and Learning"
+  
+  mit:
+    name: "Massachusetts Institute of Technology"
+    terms:
+      - time: "Spring 2019"
+        6241:
+          number: "6.241"
+          title: "Dynamic Systems and Control"
+        6262:
+          number: "6.262"
+          title: "Discrete Stochastic Processes"
+        6437:
+          number: "6.437"
+          title: "Inference and Information"
+      - time: "Fall 2018"
+        6438:
+          number: "6.438"
+          title: "Algorithms for Inference"
+        6728:
+          number: "6.728"
+          title: "Applied Quantum and Statistical Physics"
+        6450:
+          number: "6.450"
+          title: "Digital Communications"
+      - time: "Spring 2018"
+        6337:
+          number: "6.337"
+          title: "Numerical Methods"
+      - time: "Fall 2017"
+        6341:
+          number: "6.341"
+          title: "Discrete-Time Signal Processing"
+        6888:
+          number: "6.888"
+          title: "Hardware Architecture for Deep Learning"
+  
+oldresearch:
+  - company: "MIT Lincoln Laboratory"
+    position: "Summer Intern"
+    groupname: "Group 62, Advanced RF Techniques and Systems"
+    time: "Summer 2018, Summer 2019"
+    projects:
+      - "Contributed to algorithms relating to space-time adaptive processing for wireless communication arrays"
+
+  - company: "MIT"
+    position: "Undergraduate Researcher"
+    groupname: "Novel Electronic Systems Group under Prof. Max Shulaker"
+    time: "Fall 2016 to Spring 2019"
+    projects:
+      - "Worked on applying Langmuir-Schaefer deposition process to Carbon Nanotube Electronics"
+      - "Development of software for circuit visualization"
+      - "Extraction of graphical model of blood vessel network in a mouse from MicroCT scans"
+
+service:
+  reviewer:
+    - time: "Spring 2022"
+      venue: "ICML"
+
+    - time: "May 2021"
+      venue: "Scientific Reports"
+
+  committees:
+    - position: "General Chair"
+      time: "Spring 2023"
+      venue: "18th CSL Student Conference"
+
+    - position: "Funding Chair"
+      time: "Spring 2022"
+      venue: "17th CSL Student Conference"
+
+    - position: "Co-organizer"
+      time: "Fall 2021"
+      venue: "CSL Social Hour"
+      notes: "Found Research Presenters Across Fields, Promoted Event"
+
+teaching:
+  - name: "University of Illinois Urbana-Champaign"
+    courses:
+      - position: "Teaching Assistant"
+        number: "ECE 551"
+        title: "Digital Signal Processing II"
+        term: "Fall 2020"
+
+  - name: "Massachusetts Institute of Technology"
+    courses:
+      - position: "Undergraduate Teaching Assistant"
+        number: "6.003"
+        title: "Signals and Systems"
+        term: "Spring 2018"
+
+      - position: "Lab Assistant"
+        number: "6.169"
+        title: "Applications of Circuits and Electronics"
+        term: "Spring 2017"
+
+      - position: "Lab Assistant"
+        number: "6.169"
+        title: "Applications of Circuits and Electronics"
+        term: "Fall 2016"
+
+mentorship:
+  - "Mentored Yizhen Lu for his Senior Thesis, “Enabling Optimization of Infinite-Horizon Prediction Through Bifurcation Diagrams,” available <a href=\"http://hdl.handle.net/2142/110268\">here</a>"

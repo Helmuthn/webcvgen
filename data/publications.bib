@@ -1,0 +1,80 @@
+@misc{collapse,
+    author={Naumer, Helmuth and Kamalabadi, Farzad},
+    title={Dimensionality Collapse: Optimal Measurement Selection for Low-Error Infinite-Horizon Forecasting},
+    year={Under Revision},
+    abstract={This work introduces a method for choosing linear functional measurements of a vector-valued time series optimized for forecasting distant time-horizons.
+    By formulating and solving the problem of sequential linear measurement design as an infinite-horizon problem with the time-averaged trace of the Cramér–Rao lower bound (CRLB) for forecasting as the cost, the most informative data can be collected irrespective of the eventual forecasting algorithm.
+    By introducing theoretical results regarding measurements under additive noise from natural exponential families, we construct a computationally efficient equivalent problem, avoiding common issues related to function approximation.
+    This efficient formulation is based on the future collapse of dimensionality inherent in the limiting behavior of many differential equations that can be directly observed in the low-rank structure of the CRLB for forecasting.
+    Implementations of both an approximate dynamic programming formulation and the proposed efficient alternative are illustrated using an extended Kalman filter for state estimation, with results on simulated systems with limit cycles and chaotic behavior demonstrating a linear improvement in the CRLB as a function of the number of collapsing dimensions of the system.}
+}
+
+@misc{forecast,
+    author={Naumer, Helmuth and Kamalabadi, Farzad},
+    title={On Forecasting Differential Equations: Singularities and Dimensionality Reduction},
+    year={In Preparation},
+    abstract = {
+    This work analyzes the impact of two common features in differential equations on forecasting performance limits for long time-horizon trajectories based on noisy measurements.
+    First, we prove the necessity of bias when forecasting unknown, deterministic trajectories near a class of unstable fixed points.
+    We then propose a regularization based solution to mitigate the ill-posed nature of the problem.
+    Second, we characterize the global impact of low-dimensional, attracting submanifolds, demonstrating that they induce an informative vector bundle over the ambient space.
+    This vector bundle is only a function of the underlying system, and thus can be used for optimal experimental design or dataset pruning.
+    Both observations arise from an interpretation of the trajectory forecasting problem as a parameter estimation problem, and an analysis of the inverse Fisher information matrix under a system flow induced reparameterization.
+    }
+}
+
+@misc{mse,
+    author={Naumer, Helmuth and Kamalabadi, Farzad},
+    title={MSE Guarantees for Space-Invariant System Identification},
+    year={In Preparation},
+    abstract={
+    This work analyzes the source of the remarkably low mean squared error (MSE) commonly seen in estimators of large spatiotemporal system dynamics.
+    We begin by proving that, under a linear space-invariance prior with periodic boundary conditions, the MSE of the ordinary least-squares estimator decays linearly with the number of spatiotemporal points, resulting in highly accurate estimates even with few observed timesteps.
+    We then demonstrate that the structure enabling this linear decay with spatial points is broadly applicable, in particular extending the discussion to Dirichlet boundary conditions, multidimensionsional pointwise states, discretizations of higher-order temporal derivatives, and partially theoretically modelled systems for which only residual linear dynamics are being estimated.
+    Simulations demonstrate that the key insights on accuracy apply to each of these problem generalizations.
+    Finally, a brief discussion on the computational complexity of estimating space-invariant systems is included, with the observation that the bottleneck is easily parallelizable.
+    The analysis in this work provides a theoretical basis for the almost universally high accuracy of estimation in a broad class of systems.
+    }
+}
+
+@inproceedings{9191061,  
+    author={Naumer, Helmuth J. and Kamalabadi, Farzad},  
+    booktitle={2020 IEEE International Conference on Image Processing (ICIP)},   
+    title={Linear Space-Invariant System Identification And Mismatch Bounds For Estimation Of Dynamical Images},   
+    year={2020},  
+    volume={},  
+    number={},  
+    pages={2920-2924},  
+    abstract={For linear space-invariant temporal systems, we provide a lower bound on the penalty incurred by approximating system dynamics in a Kalman filter by a random walk model, a common model when dynamics are unknown. We then present a computationally tractable algorithm for system identification of high-dimensional linear space-invariant dynamical systems, whereby the circulant structure of the state transition operator yields an estimate of the governing dynamics from a small number of temporal steps. By completing all operations in the frequency domain, we efficiently provide an estimate of the system dynamics and the state of the system. The estimation of system dynamics greatly improves the state estimation over the random walk model, suggesting classical estimators may remain applicable in modern imaging tasks.},
+    doi={10.1109/ICIP40778.2020.9191061},
+    url={https://doi.org/10.1109/ICIP40778.2020.9191061}}
+
+@article{9272542,  
+    author={Naumer, Helmuth and Kamalabadi, Farzad},  
+    journal={IEEE Signal Processing Letters},   
+    title={Estimation of Linear Space-Invariant Dynamics},   
+    year={2020},  
+    volume={27},  
+    number={},  
+    pages={2154-2158},  
+    abstract={We propose a computationally efficient estimator for multi-dimensional linear space-invariant system dynamics with periodic boundary conditions that attains low mean squared error from very few temporal steps. By exploiting the inherent redundancy found in many real-world spatiotemporal systems, the estimator performance improves with the dimensionality of the system. This paper provides a detailed analysis of maximum likelihood estimation of the state transition operator in linear space-invariant systems driven by Gaussian noise. The key result of this work is that, by incorporating the space-invariance prior, the mean squared error of a estimator normalized to the number of parameters is upper bounded by N⁻¹M⁻¹ + O(N⁻¹M⁻²), where N is the number of spatial points, and M is the number of observed timesteps after the initial value.},  
+    keywords={},  
+    doi={10.1109/LSP.2020.3040941},  
+    ISSN={1558-2361},  
+    month={},
+    url={https://doi.org/10.1109/LSP.2020.3040941}}
+
+@inproceedings{9513863,  
+    author={Naumer, Helmuth and Lu, Yizhen and Kamalabadi, Farzad},  
+    booktitle={2021 IEEE Statistical Signal Processing Workshop (SSP)},   
+    title={Marginalization on Bifurcation Diagrams: A New Perspective on Infinite-Horizon Prediction},   
+    year={2021},  
+    volume={},  
+    number={},  
+    pages={431-435},  
+    abstract={This work addresses the problem of accurate infinite-horizon forecasting of dynamical systems with uncertain parameters. We introduce an intermediate representation of the probability distribution though the marginalization onto the sparse bifurcation structure of an ordinary differential equation (ODE) through integration over regions of attraction. With operations on this representation naturally completed in the space of parameter and state, metrics for the space of limiting behavior can be directly applied. Both limit points and limit cycles are investigated using the Hausdorff distance to treat them in a unified manner. The technique is further applied to stability detection, resulting in a likelihood ratio test.},  
+    keywords={},  
+    doi={10.1109/SSP49050.2021.9513863},  
+    ISSN={2693-3551},  
+    month={July},
+    url={https://doi.org/10.1109/SSP49050.2021.9513863}}
